@@ -27,19 +27,19 @@ python working_trading_app.py
 ```
 qlibtrader/
 ├── 🚀 working_trading_app.py      # Main working application (RECOMMENDED)
-├── 🔧 start_simple_trading.py     # Simplified interface
+├── 🔧 start_simple_trading.py     # Simplified interface launcher
 ├── 🧪 minimal_working_app.py      # Basic test interface
-├── ⚙️ start_trading_system.py     # Original system
 ├── 📊 diagnose_gradio.py          # Diagnostic tool
 ├── 🛠️ setup.sh                   # Setup script
 ├── 📖 README.md                   # Complete documentation
-├── 📋 WORKING_SOLUTIONS.md        # Working solutions guide
-├── 🏗️ core/                      # Core trading components
-├── 🎯 strategies/                 # Trading strategies
+├── 📋 PROJECT_SUMMARY.md          # Project summary
 ├── 🖥️ ui/                        # Web interfaces
+│   └── simple_gradio_app.py      # Simplified Gradio app
 ├── ⚙️ utils/                     # Utilities
+│   ├── config.py                 # Configuration management
+│   ├── logger.py                 # Logging utilities
+│   └── validators.py             # Data validation
 ├── 📁 configs/                    # Configuration files
-├── 🧪 tests/                      # Test suite
 └── 📊 data/                       # Data storage
 ```
 
@@ -49,7 +49,6 @@ qlibtrader/
 - **`working_trading_app.py`** - ✅ **Fully functional** (Recommended)
 - **`start_simple_trading.py`** - ✅ **Stable simplified version**
 - **`minimal_working_app.py`** - ✅ **Basic test interface**
-- **`start_trading_system.py`** - ⚠️ **Original system** (may have stability issues)
 
 ### **2. Core Features**
 - ✅ **Data Management** - Fetch and manage market data

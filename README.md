@@ -16,26 +16,23 @@ A comprehensive trading system that integrates Databento market data, Qlib analy
 ## 🏗️ Architecture
 
 ```
-trading_system/
-├── core/                    # Core trading components
-│   ├── data_fetcher.py     # Databento integration
-│   ├── analyzer.py         # Qlib analysis wrapper
-│   ├── backtester.py       # Backtesting engine
-│   └── ml_models.py        # Sklearn models
-├── strategies/             # Trading strategies
-│   ├── base_strategy.py    # Abstract base strategy
-│   ├── momentum_strategy.py
-│   └── mean_reversion_strategy.py
-├── ui/                     # Web interface
-│   ├── gradio_app.py       # Main Gradio app
-│   └── components/         # UI panels
-├── utils/                  # Utilities
-│   ├── config.py          # Configuration management
-│   ├── logger.py          # Logging utilities
-│   └── validators.py      # Data validation
-├── configs/               # Configuration files
-├── tests/                 # Test suite
-└── data/                  # Data storage
+qlibtrader/
+├── 🚀 working_trading_app.py      # Main working application (RECOMMENDED)
+├── 🔧 start_simple_trading.py     # Simplified interface launcher
+├── 🧪 minimal_working_app.py      # Basic test interface
+├── 📊 diagnose_gradio.py          # Diagnostic tool
+├── 🛠️ setup.sh                   # Setup script
+├── ui/                            # Web interfaces
+│   ├── simple_gradio_app.py      # Simplified Gradio app
+│   └── __init__.py
+├── utils/                         # Utilities
+│   ├── config.py                 # Configuration management
+│   ├── logger.py                 # Logging utilities
+│   ├── validators.py             # Data validation
+│   └── __init__.py
+├── configs/                       # Configuration files
+├── data/                          # Data storage
+└── logs/                          # Log files
 ```
 
 ## 🚀 Quick Start
@@ -87,23 +84,15 @@ trading_system/
    - Access at: `http://127.0.0.1:7860`
    - Basic functionality test
 
-   **⚙️ Original System (Advanced)**
-   ```bash
-   python start_trading_system.py --mode gradio
-   ```
-   - Access at: `http://0.0.0.0:7860`
-   - Full original interface (may have stability issues)
-
    **🏭 Production: FastAPI Server**
    ```bash
-   python start_trading_system.py --mode server
+   python start_simple_trading.py --mode server
    ```
    - Access at: `http://0.0.0.0:8000`
    - Production-ready FastAPI server
 
 5. **Open your browser**
    - Working/Simplified: `http://127.0.0.1:7860`
-   - Original: `http://0.0.0.0:7860`
    - Production: `http://0.0.0.0:8000`
 
 ## 📖 Usage
@@ -199,7 +188,6 @@ pkill -f "python.*trading"
 | `working_trading_app.py` | **Recommended** | ✅ High | Full functionality |
 | `start_simple_trading.py` | Development | ✅ High | Simplified UI |
 | `minimal_working_app.py` | Testing | ✅ High | Basic features |
-| `start_trading_system.py` | Advanced | ⚠️ Medium | Full original UI |
 
 ## 📊 Strategies
 
