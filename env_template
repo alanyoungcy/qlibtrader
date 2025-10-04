@@ -1,0 +1,25 @@
+# Trading System Environment Variables
+# Copy this file to .env and fill in your actual values
+
+# Databento API Configuration
+DATABENTO_API_KEY=your_databento_api_key_here
+
+# Optional: Other API keys for additional data sources
+# ALPHA_VANTAGE_API_KEY=your_alpha_vantage_key_here
+# QUANDL_API_KEY=your_quandl_key_here
+
+# Database Configuration (if using databases)
+# DATABASE_URL=postgresql://user:password@localhost/trading_db
+
+# Logging Configuration
+LOG_LEVEL=INFO
+LOG_DIR=logs
+
+# Application Configuration
+DEBUG=False
+HOST=0.0.0.0
+PORT=7860
+
+# Optional: Additional configuration
+# REDIS_URL=redis://localhost:6379
+# CELERY_BROKER_URL=redis://localhost:6379

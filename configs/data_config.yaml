@@ -1,0 +1,8 @@
+databento:
+  api_key: ${DATABENTO_API_KEY}
+  cache_dir: ./data/raw
+  default_schema: ohlcv-1d
+storage:
+  processed_data: ./data/processed
+  raw_data: ./data/raw
+  results: ./data/results

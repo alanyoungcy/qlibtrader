@@ -1,0 +1,18 @@
+backtesting:
+  commission: 0.001
+  initial_capital: 100000
+  max_position_size: 1.0
+  slippage: 0.0005
+strategies:
+  mean_reversion:
+    rsi_overbought: 70
+    rsi_oversold: 30
+    std_dev: 2.0
+    volume_confirmation: true
+    window: 50
+  momentum:
+    lookback: 20
+    rsi_overbought: 70
+    rsi_oversold: 30
+    threshold: 0.02
+    volume_threshold: 1.5

@@ -1,0 +1,15 @@
+qlib:
+  features:
+  - close
+  - volume
+  - rsi
+  - macd
+  - returns
+  model_type: lightgbm
+  test_period: '2023-01-01'
+  train_period: '2020-01-01'
+sklearn:
+  classifier: RandomForestClassifier
+  cv_folds: 5
+  regressor: GradientBoostingRegressor
+  test_size: 0.2
